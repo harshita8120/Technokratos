@@ -250,3 +250,8 @@ body {
             font-size: 20px;
             margin: 10px;
         }
+
+        /*Footer*/
+.footer {
+    margin-top: 50px;
+}

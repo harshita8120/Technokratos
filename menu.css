@@ -1,0 +1,27 @@
+body {
+    text-align:center;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    background-image: url('images/bg.png');
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: 100%;
+    height: auto;
+} .container {
+    margin-top: 80px;
+    background-color: rgba(14, 2, 82, 0.432);
+    color: white;
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    z-index: 1;
+    font-size: 30px;
+    padding: 20px;
+} .card {
+    margin-bottom: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}

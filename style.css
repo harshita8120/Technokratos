@@ -1,0 +1,241 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+} .navbar1, .navbar2 {
+    background-color: rgba(150, 5, 142, 0.226);
+    height: 60px;
+    font-size: 25px;
+    line-height: 60px; /*the exact height of content box and actual navbar sectior is same, so the content will remain in exact center vertically*/
+    position: absolute;
+    z-index: 1;
+    width: 35%;
+
+} .navbar1{
+    left:0;
+    border-radius: 0px 0px 50px 0px;
+} .navbar2{
+    right:0;
+    border-radius: 0px 0px 0px 50px;
+} ul {
+    list-style-type: none;
+    overflow: hidden;
+    display: inline;
+    margin: 0px;
+
+} li {
+    display: inline;
+    padding: 10px;
+} .bg-img img{
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    position: absolute;
+    display: block;
+} .event-name {
+    font-size: 50px;
+    color:rgb(235, 253, 156)
+   
+} .site-header {
+    background-image: url('images/bg.png');
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: 100%;
+    height: 700px;
+} h2 {
+    font-size: 45px;
+    font-weight: bold;
+} /*FAQ Section */
+ .faq {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #444;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      color: inherit;
+      font-size: 1.1rem;
+      padding: 1rem 0;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .faq-question i {
+      transition: transform 0.3s ease;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    /* When active, reveal answer and flip the arrow */
+    .faq-item.active .faq-answer {
+      max-height: 200px; /* big enough for your content */
+    }
+
+    .faq-item.active .faq-question i {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer p {
+      margin: 0 0 1rem;
+      line-height: 1.5;
+    } .profile, .chatbot {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: fixed;
+        background-color: #252427;
+        bottom: 5px;
+        border: 0px;
+        font-size: 40px;
+    } .profile{
+        right:5px;
+    } .chatbot {
+        left: 5px;
+    }
+
+    /*Home Page Gallery */
+    .creative-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  gap: 10px;
+}
+
+/* Define named grid areas */
+.creative-grid {
+  grid-template-areas:
+    "a a b c"
+    "d e b f"
+    "d e g h";
+}
+
+/* Assign each item to its area */
+.item--a { grid-area: a; }
+.item--b { grid-area: b; }
+.item--c { grid-area: c; }
+.item--d { grid-area: d; }
+.item--e { grid-area: e; }
+.item--f { grid-area: f; }
+.item--g { grid-area: g; }
+.item--h { grid-area: h; }
+
+.item {
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Simple hover zoom effect */
+.item:hover img {
+  transform: scale(1.1);
+} .start {
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    transform: translateY(550%);
+} .start:hover{
+    background-color: blueviolet;
+    color: white;
+} a, a:visited {
+    color: white;
+} a:hover, a:active {
+    color: rgb(187, 79, 250);
+}
+.years {
+    display: block;
+    margin-bottom: 20px;
+    
+} .years button {
+    font-size: 20px;
+    padding: 15px;
+    border: 2px rgb(252, 3, 44);
+    border-radius: 40px;
+    color: white;
+    background-color: rgb(185, 24, 51);
+} .years button:hover {
+    
+    background-color: rgb(228, 43, 74);
+} .notification {
+    width: 300px;
+    height: 150px;
+    color: white;
+    background-color: rgb(30, 1, 34);
+    border-radius: 20px;
+    padding: 35px;
+    font-size: 20px;
+    z-index: 2;
+    transform: translate(800px, -630px);
+    font-family: cursive;
+
+}
+
+/*Notification popup*/
+.overlay {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            pointer-events: none;
+        } .popup {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            width: 300px;
+            height: 260px;
+            border-radius: 10px;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            font-weight: 200;
+            transition: all 0.3s ease;
+            transform: translate(500px, 500px, 5px) scale(1.2);
+            z-index: 2;
+            position: absolute;
+            opacity:0;
+            pointer-events: none;/*disabling button clicking*/
+        } .popup-button {
+            width: 80px;
+            padding: 16px;
+            border: none;
+            background-color: rgb(15, 15, 172);
+            color: white;
+            border-radius: 60px;
+            font-size: 15px;
+            margin-right: 20px;
+            cursor: pointer;
+
+        } .popup i{
+            font-size: 72px;
+
+        } .popup-visible {
+            opacity: 1;
+            pointer-events: auto; /*allowing button clicking*/
+
+        } .blur {
+            opacity: 0.4;
+        }

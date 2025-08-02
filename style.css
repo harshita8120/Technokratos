@@ -225,4 +225,28 @@ body {
             color: white;
             border: none;
             float: right;
+        } .profile-box, .profile-box-visible{
+            background-color: rgba(0, 0, 41, 0.733);
+            color: white;
+            padding: 10px;
+            width: 100px;
+            height: 90px;
+            border-radius: 20px;
+            position: fixed;
+            bottom: 70px;
+            right: 10px;
+            
+        } .profile-box{
+            opacity : 0;
+            pointer-events: none;
+        } .profile-box-visible{
+            opacity: 1;
+            pointer-events: auto;
+        }.sign-up, .log-in {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 20px;
+            margin: 10px;
         }

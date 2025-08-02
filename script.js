@@ -29,3 +29,15 @@ function closePopup () {
 }
     
 document.querySelector('.notification-button').addEventListener('click', openPopup);   
+
+//Opening and closing Profile button
+
+// ---- Profile Box Toggle ----
+const profileButton = document.querySelector('.profile');
+const profileBox    = document.querySelector('.profile-box');
+
+profileButton.addEventListener('click', toggleProfileBox);
+
+function toggleProfileBox() {
+  profileBox.classList.toggle('profile-box-visible');
+}

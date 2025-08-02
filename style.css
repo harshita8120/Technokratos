@@ -180,18 +180,6 @@ body {
 } .years button:hover {
     
     background-color: rgb(228, 43, 74);
-} .notification {
-    width: 300px;
-    height: 150px;
-    color: white;
-    background-color: rgb(30, 1, 34);
-    border-radius: 20px;
-    padding: 35px;
-    font-size: 20px;
-    z-index: 2;
-    transform: translate(800px, -630px);
-    font-family: cursive;
-
 }
 
 /*Notification popup*/
@@ -202,40 +190,39 @@ body {
             background: rgba(0, 0, 0, 0.3);
             opacity: 0;
             pointer-events: none;
-        } .popup {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: white;
-            width: 300px;
-            height: 260px;
-            border-radius: 10px;
-            color: black;
+        } .notification {
+            font-family: cursive;
+            width: 250px;
+            height: 150px;
+            color: white;
+            background-color: rgb(30, 1, 34);
+            border-radius: 20px;
+            padding: 35px;
+            font-size: 20px;
+            transform: translate(800px, -630px);
             text-align: center;
-            padding: 10px;
-            font-weight: 200;
             transition: all 0.3s ease;
-            transform: translate(500px, 500px, 5px) scale(1.2);
             z-index: 2;
             position: absolute;
             opacity:0;
             pointer-events: none;/*disabling button clicking*/
-        } .popup-button {
-            width: 80px;
-            padding: 16px;
+        } .notification-button {
             border: none;
-            background-color: rgb(15, 15, 172);
+            background: transparent;
             color: white;
-            border-radius: 60px;
-            font-size: 15px;
-            margin-right: 20px;
             cursor: pointer;
+            font-size: 25px;
 
-        } .popup i{
+        } .notification i{
             font-size: 72px;
 
-        } .popup-visible {
+        } .notification-visible {
             opacity: 1;
             pointer-events: auto; /*allowing button clicking*/
 
-        } .blur {
-            opacity: 0.4;
+        }  .cross-button {
+            background: transparent;
+            color: white;
+            border: none;
+            float: right;
         }

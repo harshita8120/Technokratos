@@ -8,32 +8,24 @@ document
         })
       );
 
-      // Notification Popup
+// Notification Popup
+
+const popupAudio = document.getElementById('popupSound');
+
 function openPopup() {
-    document.querySelector('.popup').classList.add('popup-visible');
-    document.querySelector('.gradient').classList.add('blur');
+    document.querySelector('.notification').classList.add('notification-visible');
     popupAudio.currentTime = 0;
     popupAudio.play().catch(console.warn);
 
-    //If clicks 'yes'
+    //If clicks 'X'
 
-        document.querySelector('.yes-button').addEventListener('click', () => {
-            score.wins=0; score.losses=0; score.ties=0;
-            localStorage.removeItem('score');
-            updateScoreElement();
-            closePopup();
-        }, { once: true });
-
-    //If clicks 'no'
-
-        document.querySelector('.no-button').addEventListener('click', () => {
+        document.querySelector('.cross-button').addEventListener('click', () => {
             closePopup();
         }, { once: true });
 }
 
 function closePopup () {
-    document.querySelector('.popup').classList.remove('popup-visible');
-    document.querySelector('.gradient').classList.remove('blur');
+    document.querySelector('.notification').classList.remove('notification-visible');
 }
     
-document.querySelector('.restart').addEventListener('click', openPopup);   
+document.querySelector('.notification-button').addEventListener('click', openPopup);   

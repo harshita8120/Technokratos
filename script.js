@@ -41,3 +41,35 @@ profileButton.addEventListener('click', toggleProfileBox);
 function toggleProfileBox() {
   profileBox.classList.toggle('profile-box-visible');
 }
+
+
+//Trailer feature
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.years button');
+  const videos  = document.querySelectorAll('video[data-year]');
+
+  // Utility to hide all videos
+  function hideAllVideos() {
+    videos.forEach(video => video.classList.remove('active'));
+  }
+
+  // Show the specific video
+  function showVideo(year) {
+    const video = document.querySelector(`video[data-year="${year}"]`);
+    if (video) {
+      video.classList.add('active');
+      video.currentTime = 0;  // Reset play position if needed
+      video.play();           // Optionally start playback
+    }
+  }
+
+  // Attach click handlers
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selectedYear = btn.getAttribute('data-year');
+      hideAllVideos();
+      showVideo(selectedYear);
+    });
+  });
+});

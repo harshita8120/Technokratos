@@ -158,6 +158,8 @@ body {
     border-radius: 30px;
     border: none;
     transform: translateY(550%);
+    background-color: rgb(221, 6, 78);
+    color: white;
 } .start:hover{
     background-color: blueviolet;
     color: white;
@@ -254,4 +256,23 @@ body {
         /*Footer*/
 .footer {
     margin-top: 50px;
+}
+
+/*Trailer */
+video {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+video.active {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.trailer {
+    justify-content: center;
+  align-items: center;
 }

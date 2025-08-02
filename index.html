@@ -58,25 +58,35 @@
         <audio id="popupSound" src="audio/audio.mp3" preload="auto"></audio>
     </div>
 
-    <section class="about">
+    <section class="about" id="about">
         <h2>About Us</h2>
         <p>about us para</p>
     </section>
 
-    <section class="trailer">
-        <h2>Trailers</h2>
-        <ul class="years">
-            <li><button>2019</button></li>
-            <li><button>2020</button></li>
-            <li><button>2021</button></li>
-            <li><button>2022</button></li>
-            <li><button>2023</button></li>
-            <li><button>2024</button></li>
-        </ul>
-        <video width="500px" height="300px" controls src="https://youtu.be/8oEa17NWWtE?si=EEy0YySx_0R90d1l"></video>
+
+  <section class="trailer">
+    <h2>Trailers</h2>
+    <ul class="years">
+      <li><button data-year="2019">2019</button></li>
+      <li><button data-year="2020">2020</button></li>
+      <li><button data-year="2021">2021</button></li>
+      <li><button data-year="2022">2022</button></li>
+      <li><button data-year="2023">2023</button></li>
+      <li><button data-year="2024">2024</button></li>
+    </ul>
+
+    <video data-year="2024" class="active" ...></video>
+    
+    <video data-year="2019" width="500" height="300" controls src="..."></video>
+    <video data-year="2020" width="500" height="300" controls src="..."></video>
+    <video data-year="2021" width="500" height="300" controls src="..."></video>
+    <video data-year="2022" width="500" height="300" controls src="..."></video>
+    <video data-year="2023" width="500" height="300" controls src="..."></video>
+    <video data-year="2024" width="500" height="300" controls src="..."></video>
+
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h2>Gallery</h2>
 
         <div class="creative-grid">
@@ -91,7 +101,7 @@
         </div>
     </section>
 
-    <section class="faq">
+    <section class="faq" id="faq">
         <h2>FAQs</h2>
 
         <div class="faq-item">
@@ -102,7 +112,7 @@
       <div class="faq-answer">
         <p>
           Technokratos is an annual tech festival that automates registration,
-          communication, and merchandise sales through a unified platform.
+          communication, and merchandise sales through a unified platform. For more info, go to the "About Us" section.
         </p>
       </div>
     </div>
@@ -127,8 +137,7 @@
       </button>
       <div class="faq-answer">
         <p>
-          Yes. Log in to your profile, go to “My Tickets,” and select “Upgrade” or
-          “Downgrade” as needed.
+          No, there's no such option so far. In case of any discrepancy in your ticket/ entry pass, kindly contact our team.
         </p>
       </div>
     </div>

@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     top: 0;
     left: 0;
+    
 } .navbar1, .navbar2 {
     background-color: rgba(150, 5, 142, 0.226);
     height: 60px;
@@ -267,14 +268,12 @@ body {
 }
 
 /*Trailer */
-video {
+iframe {
   display: none;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
 }
 
-video.active {
+iframe.active {
   display: block;
   justify-content: center;
   align-items: center;
